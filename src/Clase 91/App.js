@@ -3,6 +3,7 @@ import CharactersPage from "./CharactersPage";
 import LocationsPage from "./LocationsPage";
 import EpisodesPage from "./EpisodesPage";
 import Nav from "./components/Nav";
+import CharacterPage from "./CharacterPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
@@ -21,6 +22,9 @@ const App = () => {
         </Route>
         <Route exact path="/episodes">
           <EpisodesPage />
+        </Route>
+        <Route exact path="/character/:id">
+          <CharacterPage />
         </Route>
         <Route>
           <h1>Not Found</h1>

@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Container = styled.article`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 const Card = styled.article`
   display: flex;
@@ -25,6 +26,7 @@ const Name = styled.h2`
   font-size: 20px;
   font-family: "Helvetica";
   text-align: center;
+  color: white;
 `;
 
 const LocationsPage = () => {
