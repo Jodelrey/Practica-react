@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import App from "./Clase 91/App";
+//import { TodoProvider } from "./Clase 94/contexts/TodoContext";
+import App from "./Clase 95/AppDrinks";
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
