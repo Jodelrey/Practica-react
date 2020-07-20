@@ -21,10 +21,18 @@ const TodoProvider = (children) => {
 };
 
 //reducers o ducks. Los archivos de ducks son varias cosas que necesita redux para funcionar.
-//Dentro van las constantes que son los nombres de las acciones. Las funciones que devuelven el objeto que va en el dispatch (actions creators)
+//Dentro van:
+//-Las constantes que son los nombres de las acciones.
+// -Las funciones que devuelven el objeto que va en el dispatch(actions creators). Las acciones creadoras lo unico que hacen es devolver el objeto que crea la accion. Este objeto tiene el tipo de accion y el payload
+//-El reducer
+
+//El duck tiene la logica, las acciones que se crean y la lista de acciones. Esto se exporta. En el patron de contexto se importa. Dentro del provider compartimos el metodo q permite despachar accioness y las funciones que nos permiten crear acciones
 
 const addTodoAction = (todo) => ({
-  type: "ADD_TODO",
+  type: TODO_ACTIONS.ADD,
   payload: { message: todo },
 });
-const deleteTodoAction = (id) => ({ type: "DELETE_TODO", payload: { id } });
+const deleteTodoAction = (id) => ({
+  type: TODO_ACTIONS.DELETE,
+  payload: { id },
+});
