@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 //import { TodoProvider } from "./Clase 94/contexts/TodoContext";
-import App from "./Clase 96/App";
+import App from "./Clase 97/App";
 //import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
